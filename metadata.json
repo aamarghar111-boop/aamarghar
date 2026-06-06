@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Drive Campaign Studio",
+  "description": "Analyze Google Drive images using Gemini AI to craft ad campaigns, create beautiful marketing templates, download designs, and automate multi-channel social media posts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
