@@ -1,18 +1,71 @@
-*.iml
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Android
 .gradle
-.kotlin
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/
+*.iml
+*.apk
+*.ap_
+*.aab
 local.properties
+captures/
+.cxx/
+*.jks
+*.keystore
+
+# Virtual environments
 .env
-debug.keystore
+.venv
+
+# IDE
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Build outputs
+/backend/build/
+/android/build/
+
+# API Keys and secrets
+.env.local
+secrets.json
+credentials.json
+token.json
+
+# Media files (temporary)
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.png
+*.jpeg
+
+# Logs
+*.log
+logs/

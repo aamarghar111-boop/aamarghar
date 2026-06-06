@@ -1,21 +1,114 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Retail Ad Creator - Auto Advertisement Generator
 
-# Run and deploy your AI Studio app
+An AI-powered application that gathers photos and videos from Google Drive retail shops and automatically creates advertisement photos and reels.
 
-This contains everything you need to run your app locally.
+## 🎯 Project Overview
 
-View your app in AI Studio: https://ai.studio/apps/e5d672d8-33b6-417b-b413-8e72257b14a7
+This application automates the creation of professional advertising content by:
+- Fetching media from Google Drive
+- Processing images and videos
+- Generating AI-enhanced promotional content
+- Creating reels for social media platforms
 
-## Run Locally
+## 📚 Tech Stack
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+### Backend
+- **Python** - AI/ML pipeline and core processing
+- **Google Drive API** - Media retrieval
+- **FFmpeg** - Video processing
+- **OpenCV/PIL** - Image processing
+- **TensorFlow/PyTorch** - AI enhancements
 
+### Frontend/Mobile
+- **Kotlin** - Android native app
+- **Jetpack Compose** - Modern UI
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+### AI Services
+- Google Gemini API - Content generation
+- Custom ML models - Image/video enhancement
+
+## 📁 Project Structure
+
+```
+aamarghar/
+├── android/                 # Kotlin Android app
+│   ├── app/
+│   ├── build.gradle
+│   └── settings.gradle
+├── backend/                 # Python backend
+│   ├── src/
+│   ├── requirements.txt
+│   └── main.py
+├── docs/                    # Documentation
+├── README.md
+└── .gitignore
+```
+
+## 🚀 Development Phases
+
+### Phase 1: Setup & Architecture
+- Project initialization
+- Google Drive API setup
+- Database schema design
+- Authentication system
+
+### Phase 2: Media Processing
+- Image enhancement pipeline
+- Video processing (cut, trim, compile)
+- Metadata extraction
+
+### Phase 3: AI-Powered Ad Creation
+- Template system
+- Automated caption generation
+- Reel compilation with effects
+
+### Phase 4: Output & Distribution
+- Multi-format export
+- Social media optimization
+- Direct platform uploads
+
+## 🔧 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- Android Studio
+- Google Cloud Account
+- Google Drive API credentials
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/aamarghar111-boop/aamarghar.git
+cd aamarghar
+```
+
+2. Backend setup
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+3. Android setup
+```bash
+cd android
+./gradlew build
+```
+
+## 📖 Documentation
+
+- [API Documentation](./docs/API.md)
+- [Setup Guide](./docs/SETUP.md)
+- [Architecture](./docs/ARCHITECTURE.md)
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## 📝 License
+
+This project is open source under the MIT License.
+
+---
+
+**Status:** 🚧 In Development
